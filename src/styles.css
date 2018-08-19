@@ -1,1 +1,17 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+input[type='checkbox'].icon-checkbox{display:none}
+input[type='checkbox'].icon-checkbox+label .unchecked{display:inline}
+input[type='checkbox'].icon-checkbox+label .checked{display:none}
+input[type='checkbox']:checked.icon-checkbox{display:none}
+input[type='checkbox']:checked.icon-checkbox+label .unchecked{display:none}
+input[type='checkbox']:checked.icon-checkbox+label .checked{display:inline}
+
+body{
+  font-size: 24px;
+}
+
+.btn{
+  font-size: 20px;
+  font-weight: 600;
+}
