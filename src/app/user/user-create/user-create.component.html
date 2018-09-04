@@ -1,3 +1,54 @@
-<p>
-  user-create works!
-</p>
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <div class="row">
+      <div class="col-md-6">
+        <strong>CREATE USER</strong>
+      </div>
+    </div>
+  </div>
+  <div class="panel-body">
+    <form>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="form-group">
+            <label for="userId">User ID</label>
+            <input class="form-control" type="text" id="userId" value="" required>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="form-group">
+            <label for="firstName">First Name</label>
+            <input class="form-control" type="text" id="firstName" value="" required>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="form-group">
+            <label for="lastName">Last Name</label>
+            <input class="form-control" type="text" id="lastName" value="" required>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input class="form-control" type="password" id="password" value="" required>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="form-group">
+            <label for="contact">Contact</label>
+            <input class="form-control" type="number" id="contact" value="">
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="form-group">
+            <label for="roleId">Role</label>
+            <select class="form-control" id="roleId" required>
+              <option *ngFor="let role of roles" [value]="role.id">{{role.name}}</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <button type="submit" class="btn btn-primary">Create</button>
+    </form>
+  </div>

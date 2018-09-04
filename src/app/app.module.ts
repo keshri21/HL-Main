@@ -2,8 +2,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
-import { MaterialModule } from '@angular/material';
-import { DatePickerModule } from 'angular-material-datepicker';
 
 import { AppComponent } from './app.component';
 import { DoRunningComponent } from './do/do-running/do-running.component';
@@ -56,9 +54,7 @@ import { HlCheckboxDirective } from './directives/hl-checkbox.directive';
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule,
-    MaterialModule.forRoot(),
-    DatePickerModule
+    HttpModule
   ],
   providers: [],
   bootstrap: [AppComponent]

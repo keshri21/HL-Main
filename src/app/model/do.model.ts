@@ -6,7 +6,7 @@ export class DO {
     public areaDoNo: number;
     public bspDoNo: number;
     public doNo: string;
-    public doDesc: string;
+    public doDisplay: string;
     public selected: boolean;
 
     constructor(doId: number, collaryName: string, quantity: number, areaDoNo: number, bspDoNo: number){
@@ -16,7 +16,7 @@ export class DO {
       this.areaDoNo = areaDoNo;
       this.bspDoNo = bspDoNo;
       this.doNo = this.areaDoNo + "/" + this.bspDoNo;
-      this.doDesc = this.doNo + "-" + this.collaryName + "-" + this.quantity;
+      this.doDisplay = this.doNo + "-" + this.collaryName + "-" + this.quantity;
       this.selected = false;
     }
 }
