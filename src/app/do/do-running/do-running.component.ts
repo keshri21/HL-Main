@@ -26,7 +26,7 @@ export class DoRunningComponent implements OnInit {
 
   onProceed(){
     this.activeDoList.forEach(activeDo => {
-        console.log(activeDo.doDesc + " " + activeDo.selected);
+        console.log(activeDo.doDisplay + " " + activeDo.selected);
     });
   }
 
